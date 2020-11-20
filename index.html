@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="rsc/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="con1">
+            <h1 style="color: rgb(155, 170, 156);">Soccer Game</h1>
+        </div>
+        <div class="con2">
+            <h1 id="score">00</h1>
+            <div id="btn">
+                <button id="start" onclick="startButton()">Mulai</button>
+            </div>
+            <div id="life">
+                <img id="live" src="rsc/img/h3.png" alt="Nyawa">
+            </div>
+            <h1 id="name-hScore">High Score:</h1>
+            <h1 id="hScore">00</h1>
+            <img id="game" src="rsc/img/gawang.jpg" alt="">
+        </div>
+        <div class="con3">
+            <input type="image" src="rsc/img/left.png" alt="Tendang ke Kiri!" id="left" onclick="addAnswer(this.id)">
+            <input type="image" src="rsc/img/up.png" alt="Tendang Lurus!" id="up" onclick="addAnswer(this.id)">
+            <input type="image" src="rsc/img/right.png" alt="Tendang ke Kanan!" id="right" onclick="addAnswer(this.id)">
+        </div>
+        <video id="bg" src="rsc/vid/bg-mov.mp4" autoplay loop muted></video>
+    </body>
+        <script src="rsc/js/main.js"></script>
+</html>
